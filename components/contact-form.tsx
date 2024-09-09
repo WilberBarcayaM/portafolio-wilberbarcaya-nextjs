@@ -54,7 +54,7 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormControl>
                                     <Input
-                                        placeholder="your name"
+                                        placeholder="Tu nombre"
                                         {...field}
                                         className="dark:bg-slate-800"
                                     />
@@ -71,7 +71,7 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormControl>
                                     <Input
-                                        placeholder="your email"
+                                        placeholder="Tu email"
                                         {...field}
                                         className="dark:bg-slate-800"
                                     />
