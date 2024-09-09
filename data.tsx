@@ -5,19 +5,19 @@ export const dataAboutMe = [
         id: 1,
         name: "Experiencia",
         icon: <Briefcase />,
-        description: "+2 años de experiencia",
+        description: "+1 años de experiencia",
     },
     {
         id: 2,
         name: "Clientes",
         icon: <UsersRound />,
-        description: "+200 clientes satisfechos",
+        description: "+2 clientes satisfechos",
     },
     {
         id: 3,
         name: "Proyectos",
         icon: <Wrench />,
-        description: "+50 completados",
+        description: "+5 completados",
     },
 ];
 
@@ -132,26 +132,26 @@ export const dataExperience = [
             {
                 name: "CSS",
                 subtitle: "Intermedio",
-                value: 75,
+                value: 65,
             },
             {
                 name: "JavaScript",
-                subtitle: "Experimentado",
+                subtitle: "Intermedio",
                 value: 60,
             },
             {
                 name: "Tailwind CSS",
-                subtitle: "Experimentado",
-                value: 30,
+                subtitle: "Basic",
+                value: 10,
             },
             {
                 name: "React",
-                subtitle: "Experimentado",
-                value: 60,
+                subtitle: "Basic",
+                value: 20,
             },
             {
                 name: "Bootstrap",
-                subtitle: "Basic",
+                subtitle: "Intermedio",
                 value: 50,
             },
         ],
@@ -162,33 +162,33 @@ export const dataExperience = [
         experience: [
             {
                 name: "Node JS",
-                subtitle: "Experimentado",
-                value: 80,
+                subtitle: "Basic",
+                value: 30,
             },
             {
                 name: "Mongo DB",
-                subtitle: "Intermedio",
-                value: 75,
+                subtitle: "Basic",
+                value: 20,
             },
             {
                 name: "Python",
-                subtitle: "Basic",
+                subtitle: "Intermedio",
                 value: 60,
             },
             {
                 name: "MySQL",
-                subtitle: "Experimentado",
-                value: 60,
+                subtitle: "Intermedio",
+                value: 50,
             },
             {
                 name: "PHP",
-                subtitle: "Experimentado",
-                value: 60,
+                subtitle: "Intermedio",
+                value: 50,
             },
             {
                 name: "Django",
-                subtitle: "Basic",
-                value: 60,
+                subtitle: "Intermedio",
+                value: 50,
             },
         ],
     },
@@ -241,18 +241,18 @@ export const dataServices = [
             {
                 name: "Edición profesional de textos y materiales visuales",
             },
-            {
-                name: "Estrategias de marketing de contenidos efectivas",
-            },
-            {
-                name: "Producción de podcasts informativos y entretenidos",
-            },
-            {
-                name: "Generación de infografías claras y visualmente atractivas",
-            },
-            {
-                name: "Fotografía profesional para capturar momentos excepcionales",
-            },
+            // {
+            //     name: "Estrategias de marketing de contenidos efectivas",
+            // },
+            // {
+            //     name: "Producción de podcasts informativos y entretenidos",
+            // },
+            // {
+            //     name: "Generación de infografías claras y visualmente atractivas",
+            // },
+            // {
+            //     name: "Fotografía profesional para capturar momentos excepcionales",
+            // },
         ],
     },
     {
@@ -266,9 +266,9 @@ export const dataServices = [
             {
                 name: "Prototipado interactivo para visualizar la interfaz",
             },
-            {
-                name: "Investigación de usuarios para comprender necesidades y expectativas",
-            },
+            // {
+            //     name: "Investigación de usuarios para comprender necesidades y expectativas",
+            // },
             {
                 name: "Optimización de la usabilidad para mejorar la accesibilidad",
             },
@@ -287,22 +287,22 @@ export const dataContact = [
     {
         id: 1,
         title: "Teléfono",
-        subtitle: "+34 677 66 66 33",
-        link: "tel:+34677666633",
+        subtitle: "+59167641208",
+        link: "tel:+59167641208",
         icon: <Phone />,
     },
     {
         id: 2,
         title: "Github",
-        subtitle: "github.com/ratasi",
-        link: "github.com/ratasi",
+        subtitle: "https://github.com/WilberBarcayaM",
+        link: "https://github.com/WilberBarcayaM",
         icon: <Code2 />,
     },
     {
         id: 3,
         title: "Email",
-        subtitle: "email@email.com",
-        link: "mailto:test@test.com",
+        subtitle: "barcayamuruchiwilber@gmail.com",
+        link: "mailto:barcayamuruchiwilber@gmail.com",
         icon: <Inbox />,
     },
 ];
