@@ -17,7 +17,7 @@ export const dataAboutMe = [
         id: 3,
         name: "Projects",
         icon: <Wrench />,
-        description: "+5 completed",
+        description: "+4 completed",
     },
 ];
 
