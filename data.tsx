@@ -1,17 +1,17 @@
-import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
+import { BookText, Briefcase, Code2, CodeSquare, Home, Inbox, Laptop, Linkedin, Mail, Phone, Server, Sparkles, UserRound, UsersRound, Wrench } from "lucide-react";
 
 export const dataAboutMe = [
     {
         id: 1,
         name: "Experiencia",
         icon: <Briefcase />,
-        description: "+1 años de experiencia",
+        description: "+2 años de experiencia",
     },
     {
         id: 2,
-        name: "Clientes",
+        name: "Empresas",
         icon: <UsersRound />,
-        description: "+2 clientes satisfechos",
+        description: "+2 empresas",
     },
     {
         id: 3,
@@ -24,31 +24,31 @@ export const dataAboutMe = [
 export const itemsNavbar = [
     {
         id: 1,
-        title: "Home",
+        title: "Inicio",
         icon: <Home size={20} />,
         link: "#home",
     },
     {
         id: 2,
-        title: "User",
+        title: "Sobre mí",
         icon: <UserRound size={20} />,
         link: "#about-me",
     },
     {
         id: 3,
-        title: "Book",
+        title: "Servicios",
         icon: <BookText size={20} />,
         link: "#services",
     },
-    {
-        id: 4,
-        title: "Target",
-        icon: <CodeSquare size={20} />,
-        link: "#portfolio",
-    },
+    // {
+    //     id: 4,
+    //     title: "Portafolio",
+    //     icon: <CodeSquare size={20} />,
+    //     link: "#portfolio",
+    // },
     {
         id: 5,
-        title: "Home",
+        title: "Contacto",
         icon: <Mail size={20} />,
         link: "#contact",
     },
@@ -119,40 +119,55 @@ export const dataPortfolio = [
 ];
 
 
+// Rangos de nivel para el campo "value":
+// Básico:       0  – 25
+// Intermedio:   26 – 50
+// Avanzado:     51 – 75
+// Experimentado: 76 – 90
 export const dataExperience = [
     {
         id: 1,
-        title: "Frontend Development  💄",
+        title: "Frontend Development  🖥️",
         experience: [
             {
-                name: "HTML",
+                name: "TypeScript",
                 subtitle: "Experimentado",
-                value: 80,
+                value: 88,
             },
             {
-                name: "CSS",
-                subtitle: "Intermedio",
-                value: 65,
+                name: "Angular",
+                subtitle: "Experimentado",
+                value: 85,
+            },
+            {
+                name: "HTML & CSS",
+                subtitle: "Experimentado",
+                value: 82,
             },
             {
                 name: "JavaScript",
-                subtitle: "Intermedio",
-                value: 60,
+                subtitle: "Experimentado",
+                value: 78,
             },
             {
-                name: "Tailwind CSS",
-                subtitle: "Basic",
-                value: 10,
+                name: "SCSS",
+                subtitle: "Experimentado",
+                value: 79,
             },
             {
                 name: "React",
-                subtitle: "Basic",
-                value: 20,
+                subtitle: "Intermedio",
+                value: 42,
+            },
+            {
+                name: "Tailwind CSS",
+                subtitle: "Intermedio",
+                value: 48,
             },
             {
                 name: "Bootstrap",
                 subtitle: "Intermedio",
-                value: 50,
+                value: 35,
             },
         ],
     },
@@ -161,34 +176,34 @@ export const dataExperience = [
         title: "Backend Development  🥷",
         experience: [
             {
-                name: "Node JS",
-                subtitle: "Basic",
-                value: 30,
+                name: "NestJS",
+                subtitle: "Avanzado",
+                value: 74,
             },
             {
-                name: "Mongo DB",
-                subtitle: "Basic",
-                value: 20,
+                name: "GraphQL",
+                subtitle: "Avanzado",
+                value: 65,
+            },
+            {
+                name: "Node.js",
+                subtitle: "Avanzado",
+                value: 60,
+            },
+            {
+                name: "MySQL / PostgreSQL",
+                subtitle: "Avanzado",
+                value: 62,
             },
             {
                 name: "Python",
                 subtitle: "Intermedio",
-                value: 60,
+                value: 40,
             },
             {
-                name: "MySQL",
+                name: "Docker",
                 subtitle: "Intermedio",
-                value: 50,
-            },
-            {
-                name: "PHP",
-                subtitle: "Intermedio",
-                value: 50,
-            },
-            {
-                name: "Django",
-                subtitle: "Intermedio",
-                value: 50,
+                value: 30,
             },
         ],
     },
@@ -198,26 +213,26 @@ export const dataExperience = [
 export const dataServices = [
     {
         id: 1,
-        title: "Desarrollo Web",
-        icon: <PanelsTopLeft />,
+        title: "Desarrollo FullStack",
+        icon: <Laptop />,
         features: [
             {
-                name: "Desarrollo de sitios web personalizados",
+                name: "Aplicaciones web con Angular y React",
             },
             {
                 name: "Diseño y desarrollo responsive",
             },
             {
-                name: "Optimización SEO",
+                name: "Arquitecturas modulares y escalables",
             },
             {
-                name: "Desarrollo de aplicaciones web",
+                name: "Integración con APIs REST y GraphQL",
             },
             {
-                name: "Gestión de contenido",
+                name: "Gestión de estado con RxJS y NgRx",
             },
             {
-                name: "Comercio electrónico",
+                name: "Componentes reutilizables con TypeScript y SCSS",
             },
             {
                 name: "Mantenimiento y soporte continuo",
@@ -226,57 +241,51 @@ export const dataServices = [
     },
     {
         id: 2,
-        title: "Creación de contenido",
-        icon: <BellPlus />,
+        title: "Backend & APIs",
+        icon: <Server />,
         features: [
             {
-                name: "Redacción de contenido original y de calidad",
+                name: "Desarrollo de APIs REST con NestJS y Node.js",
             },
             {
-                name: "Creación de vídeos atractivos y dinámicos",
+                name: "APIs GraphQL con tipado estricto",
             },
             {
-                name: "Diseño gráfico para una imagen impactante",
+                name: "Operaciones CRUD y gestión de base de datos",
             },
             {
-                name: "Edición profesional de textos y materiales visuales",
+                name: "Optimización de consultas SQL (MySQL / PostgreSQL)",
             },
-            // {
-            //     name: "Estrategias de marketing de contenidos efectivas",
-            // },
-            // {
-            //     name: "Producción de podcasts informativos y entretenidos",
-            // },
-            // {
-            //     name: "Generación de infografías claras y visualmente atractivas",
-            // },
-            // {
-            //     name: "Fotografía profesional para capturar momentos excepcionales",
-            // },
+            {
+                name: "Entornos locales con Docker",
+            },
+            {
+                name: "Autenticación, interceptores y manejo de errores",
+            },
         ],
     },
     {
         id: 3,
-        title: "UI/UX Design",
-        icon: <Brush />,
+        title: "IA & Desarrollo Móvil",
+        icon: <Sparkles />,
         features: [
             {
-                name: "Diseño intuitivo para una experiencia de usuario fluida",
+                name: "Visión por computadora con YOLOv8",
             },
             {
-                name: "Prototipado interactivo para visualizar la interfaz",
-            },
-            // {
-            //     name: "Investigación de usuarios para comprender necesidades y expectativas",
-            // },
-            {
-                name: "Optimización de la usabilidad para mejorar la accesibilidad",
+                name: "Machine Learning con TensorFlow, PyTorch y scikit-learn",
             },
             {
-                name: "Pruebas de usabilidad para evaluar la experiencia",
+                name: "Procesamiento de lenguaje natural (NLP)",
             },
             {
-                name: "Diseño responsive para adaptarse a diferentes dispositivos",
+                name: "Desarrollo de apps móviles con Flutter",
+            },
+            {
+                name: "Integración de hardware (Arduino, Bluetooth)",
+            },
+            {
+                name: "Creación de datasets personalizados para modelos de IA",
             },
         ],
     },
@@ -287,23 +296,34 @@ export const dataContact = [
     {
         id: 1,
         title: "Teléfono",
-        subtitle: "+59167641208",
+        subtitle: "+591 67641208",
         link: "tel:+59167641208",
         icon: <Phone />,
+        linkLabel: "Llamar",
     },
     {
         id: 2,
-        title: "Github",
-        subtitle: "https://github.com/WilberBarcayaM",
-        link: "https://github.com/WilberBarcayaM",
-        icon: <Code2 />,
+        title: "LinkedIn",
+        subtitle: "Wilber Barcaya Muruchi",
+        link: "https://linkedin.com/in/wilber-barcaya-muruchi-7891a7265",
+        icon: <Linkedin />,
+        linkLabel: "Enviar mensaje",
     },
     {
         id: 3,
+        title: "Github",
+        subtitle: "WilberBarcayaM",
+        link: "https://github.com/WilberBarcayaM",
+        icon: <Code2 />,
+        linkLabel: "Ver perfil",
+    },
+    {
+        id: 4,
         title: "Email",
         subtitle: "barcayamuruchiwilber@gmail.com",
         link: "mailto:barcayamuruchiwilber@gmail.com",
         icon: <Inbox />,
+        linkLabel: "Enviar correo",
     },
 ];
 

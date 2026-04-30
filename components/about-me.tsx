@@ -1,14 +1,30 @@
+"use client"
+
+import { useEffect, useState } from "react";
 import { Phone } from "lucide-react";
+import Link from "next/link";
 
 import { dataAboutMe, dataSlider } from "@/data";
 
 import Title from "./shared/title";
-import { Button } from "./ui/button";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import { buttonVariants } from "./ui/button";
+import { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import Image from "next/image";
 
 const AboutMe = () => {
-    return ( 
+    const [api, setApi] = useState<CarouselApi>();
+
+    useEffect(() => {
+        if (!api) return;
+
+        const interval = setInterval(() => {
+            api.scrollNext();
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [api]);
+
+    return (
         <div className="p-6 md:px-12 md:py-30 max-w-5xl" id="about-me">
             <Title title="Sobre mi" subtitle="Conóceme"/>
 
@@ -16,16 +32,18 @@ const AboutMe = () => {
                 <div className="py-12 ms:py-0 flex items-center justify-center">
                     {/* CAROUSEL */}
                     <Carousel
-                    opts={{
-                        align:"start"
-                    }}
-                    orientation="vertical"
-                    className="w-full max-w-xs h-fit"
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                        orientation="vertical"
+                        className="w-full max-w-xs h-fit"
+                        setApi={setApi}
                     >
                         <CarouselContent className="mt-1 h-[200px]">
                             {dataSlider.map((data) => (
                                 <CarouselItem key={data.id}>
-                                    <div className=" flex items-center justify-center">
+                                    <div className="flex items-center justify-center">
                                         <Image src={data.url} alt="Image" width={250} height={400} className="w-full h-auto rounded-lg" />
                                     </div>
                                 </CarouselItem>
@@ -46,15 +64,19 @@ const AboutMe = () => {
                         ))}
                     </div>
                         <p className="my-8">
-                        Soy estudiante en la etapa final de la carrera técnica en Informática y del 9<sup>º</sup> semestre en Ingeniería en Ciencias de la Computación. Apasionado por la programación, disfruto creando y resolviendo desafíos tanto en proyectos personales como en mi formación académica. Fuera del ámbito tecnológico, el gimnasio y el levantamiento de pesas son fundamentales para mantener mi equilibrio entre mente y cuerpo. Como autodidacta, aprendo a través de libros y la web, e integrando la programación con un desarrollo personal equilibrado, compartiendo mi entusiasmo y conocimientos en la comunidad de desarrollo.
+                        Desarrollador FullStack con más de 2 años de experiencia en Angular, TypeScript y NestJS, aplicando arquitecturas modulares y consumo de APIs REST/GraphQL. Licenciado en Ingeniería en Ciencias de la Computación por la Universidad San Francisco Xavier de Chuquisaca. He trabajado en empresas como 10Minds y Venkor, desarrollando soluciones web escalables para sectores de biotecnología y servicios económicos. Apasionado por la IA aplicada, desarrollé una app móvil con YOLOv8 para asistir a personas con discapacidad visual. Fuera del ámbito tecnológico, el gimnasio y el levantamiento de pesas son fundamentales para mantener mi equilibrio.
                         </p>
-                        <Button>
-                            <Phone size={20} className="mr-2" />Hablamos
-                        </Button>
+                        <Link
+                            href="https://wa.me/59167641208"
+                            target="_blank"
+                            className={buttonVariants()}
+                        >
+                            <Phone size={20} className="mr-2" /> Hablamos
+                        </Link>
                 </div>
             </div>
         </div>
      );
 }
- 
+
 export default AboutMe;

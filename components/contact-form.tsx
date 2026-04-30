@@ -9,9 +9,11 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 const ContactForm = () => {
     const [succesForm, setSuccesForm] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const formSchema = z.object({
         username: z.string().min(2).max(50),
@@ -29,20 +31,25 @@ const ContactForm = () => {
     });
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
+        setIsLoading(true);
         const response = await fetch("/api/send", {
             method: "POST",
             body: JSON.stringify(values),
         });
+        setIsLoading(false);
         if (response.status === 200) {
             setSuccesForm(true);
+            form.reset();
+            setTimeout(() => setSuccesForm(false), 3000);
         }
     };
 
     return (
         <Form {...form}>
-            {succesForm ? (
-                <h4>Formulario se ha enviado con éxito ✌️</h4>
-            ) : (
+            {succesForm && (
+                <h4 className="text-green-500 font-medium mb-4">Formulario se ha enviado con éxito ✌️</h4>
+            )}
+            {!succesForm && (
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
                     className=" space-y-8"
@@ -90,14 +97,22 @@ const ContactForm = () => {
                                     <Textarea
                                         placeholder="Escribe tu mensaje"
                                         {...field}
-                                        className="dark:bg-slate-800"
+                                        className="dark:bg-slate-800 min-h-36"
                                     />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                    <Button type="submit">Enviar</Button>
+                    <Button type="submit" disabled={isLoading}>
+                        {isLoading ? (
+                            <>
+                                <Loader2 size={16} className="mr-2 animate-spin" /> Enviando
+                            </>
+                        ) : (
+                            "Enviar"
+                        )}
+                    </Button>
                 </form>
             )}
         </Form>

@@ -2,6 +2,7 @@ import { dataContact } from "@/data";
 import Title from "./shared/title";
 import Link from "next/link";
 import ContactForm from "./contact-form";
+import { buttonVariants } from "./ui/button";
 
 const Contact = () => {
     return ( 
@@ -14,8 +15,8 @@ const Contact = () => {
                             {data.icon}
                             <p>{data.title}</p>
                             <p>{data.subtitle}</p>
-                            <Link href={data.link} target="_blank">
-                                Enviar mensaje
+                            <Link href={data.link} target="_blank" className={buttonVariants({ variant: "outline" }) + " mt-3 w-full justify-center"}>
+                                {data.linkLabel}
                             </Link>
                         </div>
                     ))}

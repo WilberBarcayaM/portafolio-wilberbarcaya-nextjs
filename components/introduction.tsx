@@ -13,7 +13,7 @@ const Introduction = () => {
             <div className="text-center" id="home">
                 <h3 className="text-xl mb-3">Hello, I´m</h3>
                 <h2 className="text-4xl font-bold mb-3">Wilber Barcaya 🧑🏻‍💻</h2>
-                <h2 className="text-2xl text-gray-400">Frontend Development</h2>
+                <h2 className="text-2xl text-gray-400">Desarrollador FullStack</h2>
                 <div className="flex items-center">
                     <div className="flex flex-col md:flex-row gap-4 justify-between mt-10 mx-auto">
                         <Link className={buttonVariants()} href="#contact">
@@ -22,7 +22,7 @@ const Introduction = () => {
 
                         <Link
                             className={buttonVariants({ variant: "secondary" })}
-                            href="/cv-wilber.pdf"
+                            href="/cv_wilber_barcaya_muruchi.pdf"
                             target="_blank"
                         >
                             <Paperclip className="mr-2" /> Descargar CV
