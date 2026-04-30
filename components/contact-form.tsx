@@ -47,7 +47,7 @@ const ContactForm = () => {
     return (
         <Form {...form}>
             {succesForm && (
-                <h4 className="text-green-500 font-medium mb-4">Formulario se ha enviado con éxito ✌️</h4>
+                <h4 className="text-green-500 font-medium mb-4">Message sent successfully ✌️</h4>
             )}
             {!succesForm && (
                 <form
@@ -61,7 +61,7 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormControl>
                                     <Input
-                                        placeholder="Tu nombre"
+                                        placeholder="Your name"
                                         {...field}
                                         className="dark:bg-slate-800"
                                     />
@@ -78,7 +78,7 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormControl>
                                     <Input
-                                        placeholder="Tu email"
+                                        placeholder="Your email"
                                         {...field}
                                         className="dark:bg-slate-800"
                                     />
@@ -95,7 +95,7 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormControl>
                                     <Textarea
-                                        placeholder="Escribe tu mensaje"
+                                        placeholder="Write your message"
                                         {...field}
                                         className="dark:bg-slate-800 min-h-36"
                                     />
@@ -107,10 +107,10 @@ const ContactForm = () => {
                     <Button type="submit" disabled={isLoading}>
                         {isLoading ? (
                             <>
-                                <Loader2 size={16} className="mr-2 animate-spin" /> Enviando
+                                <Loader2 size={16} className="mr-2 animate-spin" /> Sending
                             </>
                         ) : (
-                            "Enviar"
+                            "Send"
                         )}
                     </Button>
                 </form>

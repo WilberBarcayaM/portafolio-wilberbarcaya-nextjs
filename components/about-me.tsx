@@ -26,7 +26,7 @@ const AboutMe = () => {
 
     return (
         <div className="p-6 md:px-12 md:py-30 max-w-5xl" id="about-me">
-            <Title title="Sobre mi" subtitle="Conóceme"/>
+            <Title title="About Me" subtitle="Get to know me"/>
 
             <div className="grid md:grid-cols-2">
                 <div className="py-12 ms:py-0 flex items-center justify-center">
@@ -64,14 +64,14 @@ const AboutMe = () => {
                         ))}
                     </div>
                         <p className="my-8">
-                        Desarrollador FullStack con más de 2 años de experiencia en Angular, TypeScript y NestJS, aplicando arquitecturas modulares y consumo de APIs REST/GraphQL. Licenciado en Ingeniería en Ciencias de la Computación por la Universidad San Francisco Xavier de Chuquisaca. He trabajado en empresas como 10Minds y Venkor, desarrollando soluciones web escalables para sectores de biotecnología y servicios económicos. Apasionado por la IA aplicada, desarrollé una app móvil con YOLOv8 para asistir a personas con discapacidad visual. Fuera del ámbito tecnológico, el gimnasio y el levantamiento de pesas son fundamentales para mantener mi equilibrio.
+                        FullStack Developer with over 2 years of experience in Angular, TypeScript and NestJS, applying modular architectures and REST/GraphQL API consumption. Computer Science Engineer graduated from Universidad San Francisco Xavier de Chuquisaca. I have worked at companies like 10Minds and Venkor, building scalable web solutions for biotechnology and financial services sectors. Passionate about applied AI, I developed a mobile app using YOLOv8 to assist visually impaired people. Outside of tech, the gym and weightlifting are key to keeping my balance.
                         </p>
                         <Link
                             href="https://wa.me/59167641208"
                             target="_blank"
                             className={buttonVariants()}
                         >
-                            <Phone size={20} className="mr-2" /> Hablamos
+                            <Phone size={20} className="mr-2" /> Let's talk
                         </Link>
                 </div>
             </div>

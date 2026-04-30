@@ -3,52 +3,52 @@ import { BookText, Briefcase, Code2, CodeSquare, Home, Inbox, Laptop, Linkedin, 
 export const dataAboutMe = [
     {
         id: 1,
-        name: "Experiencia",
+        name: "Experience",
         icon: <Briefcase />,
-        description: "+2 años de experiencia",
+        description: "+2 years of experience",
     },
     {
         id: 2,
-        name: "Empresas",
+        name: "Companies",
         icon: <UsersRound />,
-        description: "+2 empresas",
+        description: "+2 companies",
     },
     {
         id: 3,
-        name: "Proyectos",
+        name: "Projects",
         icon: <Wrench />,
-        description: "+5 completados",
+        description: "+5 completed",
     },
 ];
 
 export const itemsNavbar = [
     {
         id: 1,
-        title: "Inicio",
+        title: "Home",
         icon: <Home size={20} />,
         link: "#home",
     },
     {
         id: 2,
-        title: "Sobre mí",
+        title: "About Me",
         icon: <UserRound size={20} />,
         link: "#about-me",
     },
     {
         id: 3,
-        title: "Servicios",
+        title: "Services",
         icon: <BookText size={20} />,
         link: "#services",
     },
     // {
     //     id: 4,
-    //     title: "Portafolio",
+    //     title: "Portfolio",
     //     icon: <CodeSquare size={20} />,
     //     link: "#portfolio",
     // },
     {
         id: 5,
-        title: "Contacto",
+        title: "Contact",
         icon: <Mail size={20} />,
         link: "#contact",
     },
@@ -119,11 +119,11 @@ export const dataPortfolio = [
 ];
 
 
-// Rangos de nivel para el campo "value":
-// Básico:       0  – 25
-// Intermedio:   26 – 50
-// Avanzado:     51 – 75
-// Experimentado: 76 – 90
+// Skill level ranges for the "value" field:
+// Basic:        0  – 25
+// Intermediate: 26 – 50
+// Advanced:     51 – 75
+// Experienced:  76 – 90
 export const dataExperience = [
     {
         id: 1,
@@ -131,42 +131,42 @@ export const dataExperience = [
         experience: [
             {
                 name: "TypeScript",
-                subtitle: "Experimentado",
+                subtitle: "Experienced",
                 value: 88,
             },
             {
                 name: "Angular",
-                subtitle: "Experimentado",
+                subtitle: "Experienced",
                 value: 85,
             },
             {
                 name: "HTML & CSS",
-                subtitle: "Experimentado",
+                subtitle: "Experienced",
                 value: 82,
             },
             {
                 name: "JavaScript",
-                subtitle: "Experimentado",
+                subtitle: "Experienced",
                 value: 78,
             },
             {
                 name: "SCSS",
-                subtitle: "Experimentado",
+                subtitle: "Experienced",
                 value: 79,
             },
             {
                 name: "React",
-                subtitle: "Intermedio",
+                subtitle: "Intermediate",
                 value: 42,
             },
             {
                 name: "Tailwind CSS",
-                subtitle: "Intermedio",
+                subtitle: "Intermediate",
                 value: 48,
             },
             {
                 name: "Bootstrap",
-                subtitle: "Intermedio",
+                subtitle: "Intermediate",
                 value: 35,
             },
         ],
@@ -177,32 +177,32 @@ export const dataExperience = [
         experience: [
             {
                 name: "NestJS",
-                subtitle: "Avanzado",
+                subtitle: "Advanced",
                 value: 74,
             },
             {
                 name: "GraphQL",
-                subtitle: "Avanzado",
+                subtitle: "Advanced",
                 value: 65,
             },
             {
                 name: "Node.js",
-                subtitle: "Avanzado",
+                subtitle: "Advanced",
                 value: 60,
             },
             {
                 name: "MySQL / PostgreSQL",
-                subtitle: "Avanzado",
+                subtitle: "Advanced",
                 value: 62,
             },
             {
                 name: "Python",
-                subtitle: "Intermedio",
+                subtitle: "Intermediate",
                 value: 40,
             },
             {
                 name: "Docker",
-                subtitle: "Intermedio",
+                subtitle: "Intermediate",
                 value: 30,
             },
         ],
@@ -213,29 +213,29 @@ export const dataExperience = [
 export const dataServices = [
     {
         id: 1,
-        title: "Desarrollo FullStack",
+        title: "FullStack Development",
         icon: <Laptop />,
         features: [
             {
-                name: "Aplicaciones web con Angular y React",
+                name: "Web applications with Angular and React",
             },
             {
-                name: "Diseño y desarrollo responsive",
+                name: "Responsive design and development",
             },
             {
-                name: "Arquitecturas modulares y escalables",
+                name: "Modular and scalable architectures",
             },
             {
-                name: "Integración con APIs REST y GraphQL",
+                name: "REST and GraphQL API integration",
             },
             {
-                name: "Gestión de estado con RxJS y NgRx",
+                name: "State management with RxJS and NgRx",
             },
             {
-                name: "Componentes reutilizables con TypeScript y SCSS",
+                name: "Reusable components with TypeScript and SCSS",
             },
             {
-                name: "Mantenimiento y soporte continuo",
+                name: "Ongoing maintenance and support",
             },
         ],
     },
@@ -245,47 +245,47 @@ export const dataServices = [
         icon: <Server />,
         features: [
             {
-                name: "Desarrollo de APIs REST con NestJS y Node.js",
+                name: "REST API development with NestJS and Node.js",
             },
             {
-                name: "APIs GraphQL con tipado estricto",
+                name: "Strictly typed GraphQL APIs",
             },
             {
-                name: "Operaciones CRUD y gestión de base de datos",
+                name: "CRUD operations and database management",
             },
             {
-                name: "Optimización de consultas SQL (MySQL / PostgreSQL)",
+                name: "SQL query optimization (MySQL / PostgreSQL)",
             },
             {
-                name: "Entornos locales con Docker",
+                name: "Local development environments with Docker",
             },
             {
-                name: "Autenticación, interceptores y manejo de errores",
+                name: "Authentication, interceptors and error handling",
             },
         ],
     },
     {
         id: 3,
-        title: "IA & Desarrollo Móvil",
+        title: "AI & Mobile Development",
         icon: <Sparkles />,
         features: [
             {
-                name: "Visión por computadora con YOLOv8",
+                name: "Computer vision with YOLOv8",
             },
             {
-                name: "Machine Learning con TensorFlow, PyTorch y scikit-learn",
+                name: "Machine Learning with TensorFlow, PyTorch and scikit-learn",
             },
             {
-                name: "Procesamiento de lenguaje natural (NLP)",
+                name: "Natural language processing (NLP)",
             },
             {
-                name: "Desarrollo de apps móviles con Flutter",
+                name: "Mobile app development with Flutter",
             },
             {
-                name: "Integración de hardware (Arduino, Bluetooth)",
+                name: "Hardware integration (Arduino, Bluetooth)",
             },
             {
-                name: "Creación de datasets personalizados para modelos de IA",
+                name: "Custom dataset creation for AI models",
             },
         ],
     },
@@ -295,11 +295,11 @@ export const dataServices = [
 export const dataContact = [
     {
         id: 1,
-        title: "Teléfono",
+        title: "Phone",
         subtitle: "+591 67641208",
         link: "tel:+59167641208",
         icon: <Phone />,
-        linkLabel: "Llamar",
+        linkLabel: "Call",
     },
     {
         id: 2,
@@ -307,7 +307,7 @@ export const dataContact = [
         subtitle: "Wilber Barcaya Muruchi",
         link: "https://linkedin.com/in/wilber-barcaya-muruchi-7891a7265",
         icon: <Linkedin />,
-        linkLabel: "Enviar mensaje",
+        linkLabel: "Send message",
     },
     {
         id: 3,
@@ -315,7 +315,7 @@ export const dataContact = [
         subtitle: "WilberBarcayaM",
         link: "https://github.com/WilberBarcayaM",
         icon: <Code2 />,
-        linkLabel: "Ver perfil",
+        linkLabel: "View profile",
     },
     {
         id: 4,
@@ -323,7 +323,7 @@ export const dataContact = [
         subtitle: "barcayamuruchiwilber@gmail.com",
         link: "mailto:barcayamuruchiwilber@gmail.com",
         icon: <Inbox />,
-        linkLabel: "Enviar correo",
+        linkLabel: "Send email",
     },
 ];
 

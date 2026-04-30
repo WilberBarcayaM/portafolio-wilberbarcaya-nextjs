@@ -6,9 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Potafolio Wilber Barcaya",
+    title: "Wilber Barcaya | Portfolio",
     description:
-        "Portafolio dobre mi persona, donde encontrasras informacion profesional acerca de mi, te informare sobre las tecnologias que manejo, mis pasatiempos, ect.",
+        "Portfolio of Wilber Barcaya, FullStack Developer specialized in Angular, TypeScript and NestJS. Explore my skills, services and projects.",
 };
 
 export default function RootLayout({
